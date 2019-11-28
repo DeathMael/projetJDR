@@ -5,7 +5,7 @@
 {% block body %}
 
 
-    <div class="jumbotron jumbotron-fluid elegant-color-dark">
+    <div class="jumbotron jumbotron-fluid elegant-color-dark p-0 m-0">
         <div class="container">
             <h1 class="display-4 text-white">Projet Odyssey</h1>
             <p class="lead green-text">Le Projet Odyssey est un projet de création de jeu de rôle.
@@ -19,7 +19,8 @@
         </div>
     </div>
     <div class="container elegant-color-dark">
-        <section>
+        <div class="row mt-5">
+        <section class="col-12 col-lg-6">
                 <p class="text-white">
                     Il est important de noter que tous les membres de l’Orbis Primus et de l’Orbis Secundus doivent, selon le règlement de l’association, adhérer en tant que Membres Créateurs au Collectif Taliesin.
                     (Note: ceux qui auront reconnu la référence à Borges dans les titres de catégories gagnent un cookie virtuel).
@@ -43,7 +44,17 @@
                     Des Maîtres de jeu pour animer la campagne lorsqu'elle commencera!
                 </p>
         </section>
-        <section>
+            <aside class="col-12 col-lg-6">
+                <img src="{{ asset('media/img3.jpg') }}" class="img-fluid">
+
+            </aside>
+        </div>
+        <div class="row mt-5">
+            <aside class="col-12 col-lg-6">
+                <img src="{{ asset('media/img2.jpg') }}" class="img-fluid">
+
+            </aside>
+        <section class="col-12 col-lg-6">
                 <p class="text-white">
                     Le jeu se déroulera dans un univers empreint de mystère, où beaucoup d’éléments ne sont pas encore clairs pour l’Homme,
                     et où chacun lutte pour en savoir plus que les autres afin d’établir sa supériorité, qu’elle soit scientifique, politique,
@@ -56,21 +67,28 @@
                     propre à notre univers de jeu.
                 </p>
         </section>
-        <section>
-            <p  class="text-white">
-                Le Projet Odyssey se veut une campagne aux multiples niveaux de jeu et d’interaction.
-                Si chaque joueur et maître de jeu sera libre d’explorer les trames et sujet qui attireront son intérêt,
-                ils seront aussi confrontés à des évènement globaux, à des trames agissant à des échelles mondiales qui influeront sur leur quotidien -
-                personnages, endroits, idéaux, factions… Tout sera affecté par ces événements, qui forceront les joueurs à réagir et à mobiliser les découvertes,
-                les relations, etc, qu’ils auront pu développer au cours de leurs histoires particulières.
+        </div>
+        <div class="row mt-5">
+            <section class="col-12 col-lg-6">
+                <p  class="text-white">
+                    Le Projet Odyssey se veut une campagne aux multiples niveaux de jeu et d’interaction.
+                    Si chaque joueur et maître de jeu sera libre d’explorer les trames et sujet qui attireront son intérêt,
+                    ils seront aussi confrontés à des évènement globaux, à des trames agissant à des échelles mondiales qui influeront sur leur quotidien -
+                    personnages, endroits, idéaux, factions… Tout sera affecté par ces événements, qui forceront les joueurs à réagir et à mobiliser les découvertes,
+                    les relations, etc, qu’ils auront pu développer au cours de leurs histoires particulières.
 
-                Enfin le Projet Odyssey est conçu pour être un jeu adaptatif de longue durée, qu’il sera aisé de rejoindre en cours de partie et qui se développera durant de longues années
-                (dans le temps du jeu comme dans le temps réel) afin de permettre un véritable approfondissement des personnages et du lien à l’univers.
-                Ainsi le jeu connaîtra un développement continu afin de permettre cette expérience de jeu profonde,
-                et de répondre aux différentes actions des joueurs tout en leur proposant des événements globaux.
+                    Enfin le Projet Odyssey est conçu pour être un jeu adaptatif de longue durée, qu’il sera aisé de rejoindre en cours de partie et qui se développera durant de longues années
+                    (dans le temps du jeu comme dans le temps réel) afin de permettre un véritable approfondissement des personnages et du lien à l’univers.
+                    Ainsi le jeu connaîtra un développement continu afin de permettre cette expérience de jeu profonde,
+                    et de répondre aux différentes actions des joueurs tout en leur proposant des événements globaux.
 
-            </p>
-        </section>
+                </p>
+            </section>
+            <aside class="col-12 col-lg-6">
+                <img src="{{ asset('media/img1.jpg') }}" class="img-fluid">
+            </aside>
+        </div>
+
 
     </div>
     <div class="container text-center">
