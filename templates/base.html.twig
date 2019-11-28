@@ -11,13 +11,17 @@
         <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.11/css/mdb.min.css" rel="stylesheet">
         {% block stylesheets %}
             <style>
-                body {background-color: #37474f;}
+                body {background-color: #212121;
+                    color: white;}
+                span {color: #46ED58;}
+                #lienF {color: #46ED58;}
+
             </style>
 
         {% endblock %}
     </head>
     <!--Navbar -->
-    <nav class="mb-1 navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="mb-1 navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="{{ path('home') }}">COLLECTIF TALIESIN</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-555"
                 aria-controls="navbarSupportedContent-555" aria-expanded="false" aria-label="Toggle navigation">
