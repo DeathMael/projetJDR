@@ -15,6 +15,7 @@ class EventType extends AbstractType {
 			->add('title')
 			->add('date', DateType::class)
 			->add('hour', TimeType::class)
+			->add('description')
 		;
 	}
 

@@ -12,6 +12,7 @@
                 <th>Title</th>
                 <th>Date</th>
                 <th>Hour</th>
+                <th>Description</th>
                 <th>actions</th>
             </tr>
         </thead>
@@ -22,6 +23,7 @@
                 <td>{{ event.title }}</td>
                 <td>{{ event.date ? event.date|date('Y-m-d') : '' }}</td>
                 <td>{{ event.hour ? event.hour|date('H:i:s') : '' }}</td>
+                <td>{{ event.description }}</td>
                 <td>
                     <a href="{{ path('event_show', {'id': event.id}) }}">show</a>
                     <a href="{{ path('event_edit', {'id': event.id}) }}">edit</a>
