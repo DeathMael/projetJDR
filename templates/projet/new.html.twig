@@ -3,9 +3,13 @@
 {% block title %}Statut{% endblock %}
 
 {% block body %}
-    <h1>Choisir un Statut</h1>
+        <div class="container text-center">
+            <div>
+                <h1>Choisir un Statut</h1>
 
-    {{ include('projet/_form.html.twig') }}
+                {{ include('projet/_form.html.twig') }}
 
-    <a href="{{ path('projet_index') }}">Retour</a>
+                <a class="lienF" href="{{ path('projet_index') }}">Retour</a>
+            </div>
+    </div>
 {% endblock %}
