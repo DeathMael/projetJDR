@@ -4,6 +4,7 @@ namespace App\Form;
 
 use App\Entity\Projet;
 use Symfony\Component\Form\AbstractType;
+use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 
@@ -12,7 +13,9 @@ class ProjetType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('statut')
+            ->add('statut', ChoiceType::class, [
+        'choices' => $this->getChoices()
+    ])
         ;
     }
 
@@ -21,5 +24,13 @@ class ProjetType extends AbstractType
         $resolver->setDefaults([
             'data_class' => Projet::class,
         ]);
+    }
+    private function getChoices()
+    {
+        $choices = Projet::STATUT;
+        $output = [];
+        foreach ($choices as $k => $v ){
+            $output[$v] = $k;
+        }return $output;
     }
 }

@@ -1,11 +1,11 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}New Projet{% endblock %}
+{% block title %}Statut{% endblock %}
 
 {% block body %}
-    <h1>Create new Projet</h1>
+    <h1>Choisir un Statut</h1>
 
     {{ include('projet/_form.html.twig') }}
 
-    <a href="{{ path('projet_index') }}">back to list</a>
+    <a href="{{ path('projet_index') }}">Retour</a>
 {% endblock %}
