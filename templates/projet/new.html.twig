@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Statut{% endblock %}
+
+{% block body %}
+    <h1>Choisir un Statut</h1>
+
+    {{ include('projet/_form.html.twig') }}
+
+    <a href="{{ path('projet_index') }}">Retour</a>
+{% endblock %}
