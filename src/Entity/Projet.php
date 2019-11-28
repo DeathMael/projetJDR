@@ -11,10 +11,6 @@ use Doctrine\ORM\Mapping as ORM;
  */
 class Projet
 {
-    const STATUT = [
-        true => 'Maître de Jeu',
-        false => 'Joueur'
-    ];
     /**
      * @ORM\Id()
      * @ORM\GeneratedValue()
@@ -45,9 +41,6 @@ class Projet
     public function getStatut(): ?bool
     {
         return $this->statut;
-    }
-    public function getStatutType(): string{
-        return self::STATUT[$this->statut];
     }
 
     public function setStatut(bool $statut): self
